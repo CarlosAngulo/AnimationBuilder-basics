@@ -1,0 +1,50 @@
+:host {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.column {
+    flex: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.controls button {
+    border: medium none;
+    font-size: 35px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.controls button:hover {
+    background-color: #9f9fd0;
+    color: white;
+}
+
+.controls button.up {
+    display: block;
+    margin: 0 auto 4px;
+}
+
+.character {
+    width: 106px;
+    height: 111px;
+    background: url(../assets/img/character.png) no-repeat 0 0 transparent;
+    background-position: -136px -160px;
+    background-position: 0px -160px;
+    background-position: -136px 0;
+    margin: 100px auto 0;
+}

@@ -1,0 +1,19 @@
+<div class="column">
+  <div class="character" [@moveCharacterOne]="positionCharacterOne"></div>
+  <div class="controls">
+    <button class="up" (click)="changePositionCharOne('up')"><i class="fas fa-angle-up"></i></button>
+    <button class="left" (click)="changePositionCharOne('left')"><i class="fas fa-angle-left"></i></button>
+    <button class="down" (click)="changePositionCharOne('down')"><i class="fas fa-angle-down"></i></button>
+    <button class="right" (click)="changePositionCharOne('right')"><i class="fas fa-angle-right"></i></button>
+  </div>
+</div>
+
+<div class="column">
+  <div class="character" #withBuilder></div>
+  <div class="controls">
+    <button class="up" (click)="changePositionCharTwo('up')"><i class="fas fa-angle-up"></i></button>
+    <button class="left" (click)="changePositionCharTwo('left')"><i class="fas fa-angle-left"></i></button>
+    <button class="down" (click)="changePositionCharTwo('down')"><i class="fas fa-angle-down"></i></button>
+    <button class="right" (click)="changePositionCharTwo('right')"><i class="fas fa-angle-right"></i></button>
+  </div>
+</div>
