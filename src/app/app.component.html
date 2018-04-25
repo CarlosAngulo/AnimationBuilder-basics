@@ -9,7 +9,7 @@
 </div>
 
 <div class="column">
-  <div class="character" #withBuilder></div>
+  <div class="character" #withBuilder [ngClass]="characterTwoTurn"></div>
   <div class="controls">
     <button class="up" (click)="changePositionCharTwo('up')"><i class="fas fa-angle-up"></i></button>
     <button class="left" (click)="changePositionCharTwo('left')"><i class="fas fa-angle-left"></i></button>

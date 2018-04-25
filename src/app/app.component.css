@@ -42,9 +42,18 @@
 .character {
     width: 106px;
     height: 111px;
-    background: url(../assets/img/character.png) no-repeat 0 0 transparent;
-    background-position: -136px -160px;
-    background-position: 0px -160px;
-    background-position: -136px 0;
+    background: url(../assets/img/character.png) no-repeat -136px 0px transparent;
     margin: 100px auto 0;
+}
+
+.character.up {
+    background-position: -136px -160px;
+}
+
+.character.right {
+    background-position: 0px -160px;
+}
+
+.character.left {
+    background-position: 0 0;
 }

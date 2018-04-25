@@ -20,20 +20,23 @@ export class AppComponent {
   @ViewChild('withBuilder', {read: ElementRef}) characterTwo: ElementRef;
 
   positionCharacterOne = '';
-  positionCharacterTwo = {x: 0, y: 0};
-  
+  characterTwoTurn = 'down';
+  positionCharacterTwo = {x: 0, y: 0};  
   player: AnimationPlayer;
 
-  constructor( private _builder: AnimationBuilder) {
+  constructor( private _builder: AnimationBuilder) {}
 
+  changePositionCharOne(pos:string) {
+    this.positionCharacterOne = pos;
   }
 
   changePositionCharTwo(pos:string) {
-    let direction = '';
-
+    
     if(this.player) {
       this.player.destroy();
     }
+
+    this.characterTwoTurn = pos;
 
     switch(pos){
       case 'up':
@@ -61,11 +64,6 @@ export class AppComponent {
     this.player.play();
     this.characterTwo.nativeElement.style.transform = `translate(${this.positionCharacterTwo.x}px, ${this.positionCharacterTwo.y}px)`;
     
-  }
-  
-
-  changePositionCharOne(newPos) {
-    this.positionCharacterOne = newPos;
   }
 
 }
