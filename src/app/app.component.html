@@ -1,19 +1,19 @@
 <div class="column">
-  <div class="character" [@moveCharacterOne]="positionCharacterOne"></div>
+  <div class="character" [@charOnePosTrigger]="charOnePos"></div>
   <div class="controls">
-    <button class="up" (click)="changePositionCharOne('up')"><i class="fas fa-angle-up"></i></button>
-    <button class="left" (click)="changePositionCharOne('left')"><i class="fas fa-angle-left"></i></button>
-    <button class="down" (click)="changePositionCharOne('down')"><i class="fas fa-angle-down"></i></button>
-    <button class="right" (click)="changePositionCharOne('right')"><i class="fas fa-angle-right"></i></button>
+    <button class="up" (click)="charOneMove('up')"><i class="fas fa-angle-up"></i></button>
+    <button class="left" (click)="charOneMove('left')"><i class="fas fa-angle-left"></i></button>
+    <button class="down" (click)="charOneMove('down')"><i class="fas fa-angle-down"></i></button>
+    <button class="right" (click)="charOneMove('right')"><i class="fas fa-angle-right"></i></button>
   </div>
 </div>
 
 <div class="column">
-  <div class="character" #withBuilder [ngClass]="characterTwoTurn"></div>
+  <div class="character" #withBuilder [ngClass]="charTwoTurn"></div>
   <div class="controls">
-    <button class="up" (click)="changePositionCharTwo('up')"><i class="fas fa-angle-up"></i></button>
-    <button class="left" (click)="changePositionCharTwo('left')"><i class="fas fa-angle-left"></i></button>
-    <button class="down" (click)="changePositionCharTwo('down')"><i class="fas fa-angle-down"></i></button>
-    <button class="right" (click)="changePositionCharTwo('right')"><i class="fas fa-angle-right"></i></button>
+    <button class="up" (click)="charTwoMove('up')"><i class="fas fa-angle-up"></i></button>
+    <button class="left" (click)="charTwoMove('left')"><i class="fas fa-angle-left"></i></button>
+    <button class="down" (click)="charTwoMove('down')"><i class="fas fa-angle-down"></i></button>
+    <button class="right" (click)="charTwoMove('right')"><i class="fas fa-angle-right"></i></button>
   </div>
 </div>
